@@ -31,6 +31,7 @@
     "clean": "rimraf ./build",
     "test:eslint": "eslint --ext .ts,.tsx ./src",
     "test:types": "tsc",
+    "test:hashing": "jest --config ./jest.config.ts -i hashing.test.ts", 
     "test:lib": "jest --config ./jest.config.ts",
     "test:lib:dev": "pnpm run test:lib --watch",
     "build:types": "tsc --build"
